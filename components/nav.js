@@ -19,7 +19,7 @@ const Nav = () => (
       </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <a href={href}>{label}</a>
+          <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
         </li>
       ))}
     </ul>
@@ -36,6 +36,8 @@ const Nav = () => (
       ul {
         display: flex;
         justify-content: space-between;
+        list-style: none;
+        padding: 0;
       }
       nav > ul {
         padding: 4px 16px;

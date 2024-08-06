@@ -1,11 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from './components/nav'
-import Document from './_document'
-import MyApp from './_app'
+import Nav from '../components/Nav'
+import Link from 'next/link'
 
 const About = () => (
   <div>
+    <Head>
+      <title>About - Macro Compliance Tracker</title>
+    </Head>
     <Nav />
 
     <div className="container mx-auto text-center">
