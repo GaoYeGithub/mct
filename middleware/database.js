@@ -1,7 +1,8 @@
 import { MongoClient } from 'mongodb';
 import nextConnect from 'next-connect';
+const Url = process.env.mongodbURL
 
-const client = new MongoClient('mongodb://localhost:27017/MCT/daily', {
+const client = new MongoClient(apiUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
