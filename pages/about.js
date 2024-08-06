@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Nav from './nav'
+import Nav from './components/nav'
 import Document from './_document'
 import MyApp from './_app'
 
